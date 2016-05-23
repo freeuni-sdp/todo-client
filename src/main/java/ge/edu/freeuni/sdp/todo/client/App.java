@@ -18,9 +18,9 @@ public class App {
 				.add("HTTP: local , DB: cloud",
 						"http://localhost:8080/todo-core/webapi/todos")
 				.add("HTTP: cloud , DB: in-memory",
-						"http://freeuni-sdp-todo-core.azurewebsites.net/todo-core/webapi/memtodos")
+						"http://freeuni-sdp-todo.herokuapp.com/webapi/memtodos")
 				.add("HTTP: cloud , DB: cloud",
-						"http://freeuni-sdp-todo-core.azurewebsites.net/todo-core/webapi/todos")
+						"http://freeuni-sdp-todo.herokuapp.com/webapi/todos")
 				.read(scanner);
 
 		proxy = new TaskServiceProxy(uri);
